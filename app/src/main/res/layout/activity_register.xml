@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_registration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:text="@string/txt_registration"
+                android:textColor="@color/red"
+                android:textSize="@dimen/dimen_35sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/et_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_registration"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:hint="@string/hint_first_name"
+                android:inputType="text"
+                android:textColorHint="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/et_lName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_email"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:drawablePadding="@dimen/dimen_15dp"
+                android:hint="@string/hint_last_name"
+                android:inputType="text"
+                android:textColorHint="@color/colorAccent" />
+
+            <EditTexthin
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_lName"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:drawablePadding="@dimen/dimen_15dp"
+                android:hint="@string/et_email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_email"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:drawablePadding="@dimen/dimen_15dp"
+                android:hint="@string/et_password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorAccent" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_password"
+                android:background="@color/lightblue"
+                android:hint="@string/btn_register"
+                android:textColorHint="@color/red"
+                android:textSize="@dimen/txt_20sp"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
